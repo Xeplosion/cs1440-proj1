@@ -2,14 +2,6 @@
 
 Since you are still new to using Git, refer to the **Using Git** section of the lecture notes when you need help remembering which command to use to push your work to the server.
 
-**You may use AI tools** such as ChatGPT or GitHub Copilot to assist with code and documentation
-
-*   If you do this, explain in your Software Development Plan *which* tools were used, *where* they were used, and *how* they were used
-*   Use comments to *clearly* identify which portions of source code were written by the tool
-*   Failure to document use of these tools will be regarded as a **violation of academic integrity** and I will pursue sanctions
-    *   The same applies to any other resources from outside the class
-
-
 Previous Semester Statistics     | Fall 2023 | Spring 2024
 --------------------------------:|:---------:|:---------------
 Average Hours Spent              | 7.225     | 7.34  
@@ -18,6 +10,14 @@ Standard Deviation Hours         | 3.753     | 4.013
 ... Medium                       | 40.4%     | 43.8% 
 ... Hard                         | 26.0%     | 33.3% 
 ... Too Hard/Did not complete    | 12.5%     | 9.4%  
+
+
+**You may use AI tools** such as ChatGPT or GitHub Copilot to assist with code and documentation
+
+*   If you do this, explain in your Software Development Plan *which* tools were used, *where* they were used, and *how* they were used
+*   Use comments to *clearly* identify which portions of source code were written by the tool
+*   Failure to document use of these tools will be regarded as a **violation of academic integrity** and I will pursue sanctions
+    *   The same applies to any other resources from outside the class
 
 
 *   [How to Do This Project](#how-to-do-this-project)
