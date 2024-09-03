@@ -125,7 +125,7 @@ If you gave your project the wrong URL, you can fix it in GitLab before the due 
 2.  Scroll to the middle of the **Advanced** section until you see a box titled **Change path**.  Put the correct project name into this box and click the `Change path` button.
 3.  Back on your PC update your project's remote URL.  Assuming your GitLab remote is nicknamed `origin`, this command will update the URL (substitute your own details in this command):
     ```
-    $ git remote set-url origin https://gitlab.cs.usu.edu/USERNAME/cs1440-LAST-FIRST-proj#
+    $ git remote set-url origin git@gitlab.cs.usu.edu:USERNAME/cs1440-LAST-FIRST-proj#
     ```
 4.  After changing the path you *must* make another push before my submission collection program can notice the change.
     *   You may need to edit a file and create a new commit so that you can do a push.
