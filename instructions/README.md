@@ -73,14 +73,7 @@ The flaw in this program is that the optimal AI can lose.  It is your job to fin
             *   Functions that call `input()` do not belong in this module.
             *   Some functions belonging to this module will need to be modified if the format of the game board changes.
     *   Consider every function on its own merits.  Don't keep functions together simply because they were neighbors in the original program.
-4.  Fill out **Phase 0** in Plan.md; explain in your *own words* what the program does, how it does it, and what changes you have made so far.
-    *   For each function in the program, write one sentence to explain where you placed it and why you think it belongs there.
-    *   You will have uncovered redundant and/or duplicated functions.  Answer these questions in the document:
-        *   Are these functions exact copies of each other, or is there some difference between them?
-        *   Do they agree with how the game's state is kept?
-        *   Are there any unnecessary functions?
-            *   Do not delete anything now!  Just write down their names and why you think they aren't needed.
-5.  The program will no longer work after you finish remodeling it.  Do not despair!  It might feel like you are getting farther away from the goal, but you are making progress.  As the saying goes, *you can't make an omelette without breaking eggs*.  You will tackle the new problems you created in the next phase.  This is a good time to take stock of your situation and understanding of the project.  Here is a preview of the errors you will find:
+4.  The program will no longer work after you finish remodeling it.  Do not despair!  It might feel like you are getting farther away from the goal, but you are making progress.  As the saying goes, *you can't make an omelette without breaking eggs*.  You will tackle the new problems you created in the next phase.  This is a good time to take stock of your situation and understanding of the project.  Here is a preview of the errors you will find:
     *   Moving functions into different modules will result in error messages like this:
         ```
         NameError: name 'logo' is not defined
@@ -92,11 +85,11 @@ The flaw in this program is that the optimal AI can lose.  It is your job to fin
             ```
             Circular imports happen when a module ends up importing itself.  For example, a circular import occurs when interface.py imports `engine`, and engine.py imports `interface`.
         *   Circular imports are resolved by breaking the cycle by creating a module that does not import anything else.
-6.  Take the **Starter Code Quiz** on Canvas.
+5.  Take the **Starter Code Quiz** on Canvas.
     *   Do not worry if you can't answer all of the questions yet
     *   You can re-take the quiz as many times as you want before the project is due
-7.  Track your time in Signature.md.
-8.  Commit your changes to Git.  Make sure to add untracked files to the repository with `git add`.  Run `git status` to identify such files and check that they are ready to commit.
+6.  Track your time in Signature.md.
+7.  Commit your changes to Git.  Make sure to add untracked files to the repository with `git add`.  Run `git status` to identify such files and check that they are ready to commit.
 
 
 ### Phase 1: Design
@@ -112,14 +105,10 @@ The flaw in this program is that the optimal AI can lose.  It is your job to fin
         *   There are two obvious ways to fix this program:
             1.  Rewrite the functions that embody faulty assumptions about how the game state should be tracked in the program.  Identify the smallest subset of functions that are wrong to avoid rewriting the entire program.
             2.  Write one or two *adapter* functions to translate the game state representation back and forth as needed.
-    *   Write answers to these questions in **Phase 1** of Plan.md.
-2.  Once you've decided how to fix the problem, sketch out the new/improved functions in *pseudocode* in **Phase 1** of Plan.md.
-    *   Walk through the pseudocode in your head, with a pad of paper or a whiteboard to convince yourself that your changes will work.
-    *   You may use AI tools to help you understand what each function does.
-3.  Consider if any new test cases could be created to ensure the new program will perform correctly.
-4.  You should be able to get 100% on the **Starter Code Quiz** by now.
-5.  Track your time in Signature.md.
-6.  If you haven't already added and committed your changes to Git, this is a good time to do so.
+2.  Consider if any new test cases could be created to ensure the new program will perform correctly.
+3.  You should be able to get 100% on the **Starter Code Quiz** by now.
+4.  Track your time in Signature.md.
+5.  If you haven't already added and committed your changes to Git, this is a good time to do so.
 
 
 ### Phase 2: Implementation
@@ -178,7 +167,7 @@ The following procedure is the best way for you to know what it will be like whe
 
 **Before The Due Date**
 
-0.  Review Signature.md and Plan.md one last time.
+0.  Review Signature.md one last time.
 1.  Make one final commit and push your **completed** Signature.md to GitLab.
 2.  Make sure that you are happy with your **Starter Code Quiz** score.
 
@@ -223,15 +212,11 @@ Here are some tips for when you think you've found the bug in Tic-Tac-Toe but ar
     *   The repository's GitLab URL follows the naming convention
     *   All required files and directories are in their expected locations
     *   There is at least one Git commit per phase of the project.
-*   Quality documentation (15 points)
-    *   Plan.md
-        *   Each section filled out with a convincing level of detail
-        *   No code is pasted from the source files
 *   Time management (5 points)
     *   Signature.md contains accurate information about the time you spent on this project
         *   The time reported on the **TOTAL** entry is the sum of the daily entries
     *   The *TODO* message and the placeholder entries have been removed
-*   Code quality (40 points)
+*   Code quality (35 points)
     *   Functions are organized into the correct modules
     *   No useless variables or constants remain
     *   Useless functions are removed
@@ -250,7 +235,7 @@ Here are some tips for when you think you've found the bug in Tic-Tac-Toe but ar
         *   No import statement fail due to misspelling or incorrect capitalization.
             *   **Windows users** make sure that the capitalization of file names on GitLab match your `import` statements!
         *   No imports involve the `src.` package; this is the result of a PyCharm misconfiguration
-*   Program behavior (20 points)
+*   Program behavior (40 points)
     *   AI opponent is unbeatable
         *   CPU vs. CPU matches always end in a draw
         *   Human vs. CPU matches end either in a draw or CPU victory
