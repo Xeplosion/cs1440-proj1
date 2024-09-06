@@ -158,8 +158,7 @@ If you gave your project the wrong URL, you can fix it in GitLab before the due 
             |-- ai.py
             |-- engine.py
             |-- interface.py
-            |-- ttt.py
-            `-- util.py
+            `-- ttt.py
         ```
 
 
