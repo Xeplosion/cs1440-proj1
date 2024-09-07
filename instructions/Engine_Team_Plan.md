@@ -103,9 +103,9 @@ The game also needs to keep track of which squares have been played by which pla
 
 Functionality will be broken up into three big categories:
 
-1.  Miscellaneous Utilities
-2.  Game Engine
-3.  User Interface
+0.  Miscellaneous Utilities
+1.  Game Engine
+2.  User Interface
 
 As an aside, everybody calls us the "UI" team.  But as you can see here, the user interface is only a small part of what we do.
 
@@ -300,11 +300,12 @@ That's much cleaner!
 
 #### `keep_playing` - predicate: test whether the game should continue or is finished
 
-Accepts a board or False as input
-       board: take another turn
-       False: the user has requested to quit the game
-Return False if the game is over for any reason (quitting, win, lose or draw),
-       or a new board to keep playing
+Accepts a board or `False` as input.
+
+*   If the input is a board, take another turn
+*   If the input is `False`, the user has requested to quit the game
+
+Return `False` if the game is over for any reason (quitting, win, lose or draw), or a new board to keep playing
 
 ```python
 def keep_playing(board):
@@ -622,9 +623,9 @@ def get_human_move(board, letter):
 
 Things to keep in mind:
 
-1.  The user's input is a **string**
-2.  It is safe to convert it with `int()` when the input is validated to be made of digits
-3.  While this function does a little bit of validation, it is another function's job to make sure this number hasn't already been played
+0.  The user's input is a **string**
+1.  It is safe to convert it with `int()` when the input is validated to be made of digits
+2.  While this function does a little bit of validation, it is another function's job to make sure this number hasn't already been played
 
 
 #### `player_select` - ask for # of players, or quit
