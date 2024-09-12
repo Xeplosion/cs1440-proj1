@@ -200,7 +200,7 @@ Using this same technique, checking for vertical and diagonal winners is a cinch
 ```python
 def horizontal_winner(board):
     """
-    Determines which a player has won a game with a horizontal triple.
+    Determines which player has won a game with a horizontal triple.
     Input: a 2D game board.
     Return: 'X' or 'O' when there is a winner, or False when no player has 3 in
     a horizontal row
