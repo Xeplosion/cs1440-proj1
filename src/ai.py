@@ -4621,7 +4621,7 @@ def strategy_optimal(b):
     # Flattens the Engine Team's tuple to a single dimension.
     flat = tuple(item for sub_tuple in b for item in sub_tuple)
 
-    if "x" not in flat:
+    if "X" not in flat:
         return random.choice(open_cells(b))
     for i in range(len(LUT)):
         for j in range(len(LUT[i])):
