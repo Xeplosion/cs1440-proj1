@@ -43,14 +43,6 @@ def make_board():
                   tuple([7, 8, 9])])
 
 
-def is_board_empty(b):
-    # Checks whether the board is empty
-    for pos in b:
-        if "X" in pos:
-            return False
-    return True
-
-
 def place(board, position, player):
     """
     Accepts: a game board (tuple), position (integer), and a player's identity ("X" or "O")
