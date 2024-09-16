@@ -1,4 +1,5 @@
 # Software Development Plan - AI Team
+# Software Development Plan - AI Team
 
 ## Phase 0: Requirements Analysis
 *(20% of your effort)*
