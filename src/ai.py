@@ -30,6 +30,7 @@ import random
 
 from engine import open_cells
 from engine import first_open_cell
+from engine import is_board_empty
 def strategy_dumb(b):
     """Picks the first open square
 
@@ -4616,13 +4617,12 @@ def strategy_optimal(b):
     to reach the final `return False` statement at the end of the function.
     """
 
-    if "X" not in b:
+    if is_board_empty(b):
         return random.choice(open_cells(b))
     for i in range(len(LUT)):
-        for pos in b:
-            if type(pos) is int:
-                for j in range(len(LUT[i])):
-                    if b == LUT[i][j]:
-                        return i + 1
+        for j in range(len(LUT[i])):
+            if tuple(item for sub_tuple in b for item in sub_tuple) == LUT[i][j]:
+                return i + 1
+
     print("If you see this message, the AI does not recognize the current board\n" + str(b))
     return False

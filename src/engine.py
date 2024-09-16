@@ -31,7 +31,7 @@ from time import sleep
 
 import interface
 
-CPU_DELAY = 0.75
+CPU_DELAY = 1.0
 
 
 def make_board():
@@ -41,6 +41,14 @@ def make_board():
     return tuple([tuple([1, 2, 3]),
                   tuple([4, 5, 6]),
                   tuple([7, 8, 9])])
+
+
+def is_board_empty(b):
+    # Checks whether the board is empty
+    for pos in b:
+        if "X" in pos:
+            return False
+    return True
 
 
 def place(board, position, player):
@@ -178,13 +186,14 @@ def rowcol_to_pos(rowcol):
     return pos + 1
 
 
-def open_cells(b):
+def USELESS_open_cells(b):
     """ Returns a tuple of the unmarked cells in a Tic-Tac-Toe board """
     cs = []
     for p in b:
         if type(p) is int:
             cs.append(p)
     return tuple(cs)
+
 
 def open_cells(board):
     """ Returns a tuple of the unmarked cells in a Tic-Tac-Toe board """
