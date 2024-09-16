@@ -186,15 +186,6 @@ def rowcol_to_pos(rowcol):
     return pos + 1
 
 
-def USELESS_open_cells(b):
-    """ Returns a tuple of the unmarked cells in a Tic-Tac-Toe board """
-    cs = []
-    for p in b:
-        if type(p) is int:
-            cs.append(p)
-    return tuple(cs)
-
-
 def open_cells(board):
     """ Returns a tuple of the unmarked cells in a Tic-Tac-Toe board """
     openings = []
